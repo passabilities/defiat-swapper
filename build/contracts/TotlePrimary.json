@@ -1,0 +1,1790 @@
+{
+  "contractName": "TotlePrimary",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "components": [
+                    {
+                      "internalType": "address",
+                      "name": "sourceToken",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "destinationToken",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "amount",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "bool",
+                      "name": "isSourceAmount",
+                      "type": "bool"
+                    },
+                    {
+                      "components": [
+                        {
+                          "internalType": "address payable",
+                          "name": "exchangeHandler",
+                          "type": "address"
+                        },
+                        {
+                          "internalType": "bytes",
+                          "name": "encodedPayload",
+                          "type": "bytes"
+                        }
+                      ],
+                      "internalType": "struct TotlePrimaryUtils.Order[]",
+                      "name": "orders",
+                      "type": "tuple[]"
+                    }
+                  ],
+                  "internalType": "struct TotlePrimaryUtils.Trade[]",
+                  "name": "trades",
+                  "type": "tuple[]"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "minimumExchangeRate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "minimumDestinationAmount",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "sourceAmount",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "tradeToTakeFeeFrom",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "takeFeeFromSource",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "address payable",
+                  "name": "redirectAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "required",
+                  "type": "bool"
+                }
+              ],
+              "internalType": "struct TotlePrimaryUtils.Swap[]",
+              "name": "swaps",
+              "type": "tuple[]"
+            },
+            {
+              "internalType": "address payable",
+              "name": "partnerContract",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expirationBlock",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "id",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxGasPrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "v",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "r",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "s",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct TotlePrimaryUtils.SwapCollection",
+          "name": "swaps",
+          "type": "tuple"
+        }
+      ],
+      "name": "performSwapCollection",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"components\":[{\"components\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"sourceToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"destinationToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"isSourceAmount\",\"type\":\"bool\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"exchangeHandler\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"encodedPayload\",\"type\":\"bytes\"}],\"internalType\":\"struct TotlePrimaryUtils.Order[]\",\"name\":\"orders\",\"type\":\"tuple[]\"}],\"internalType\":\"struct TotlePrimaryUtils.Trade[]\",\"name\":\"trades\",\"type\":\"tuple[]\"},{\"internalType\":\"uint256\",\"name\":\"minimumExchangeRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"minimumDestinationAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"sourceAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tradeToTakeFeeFrom\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"takeFeeFromSource\",\"type\":\"bool\"},{\"internalType\":\"address payable\",\"name\":\"redirectAddress\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"required\",\"type\":\"bool\"}],\"internalType\":\"struct TotlePrimaryUtils.Swap[]\",\"name\":\"swaps\",\"type\":\"tuple[]\"},{\"internalType\":\"address payable\",\"name\":\"partnerContract\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"expirationBlock\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"id\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"maxGasPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"internalType\":\"struct TotlePrimaryUtils.SwapCollection\",\"name\":\"swaps\",\"type\":\"tuple\"}],\"name\":\"performSwapCollection\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/passa/Documents/projects/Transak/transakWebAppBackend/lib/cryptoUtil/crypto-swapper/ethereum/contracts/lib/TotlePrimary.sol\":\"TotlePrimary\"},\"evmVersion\":\"constantinople\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/passa/Documents/projects/Transak/transakWebAppBackend/lib/cryptoUtil/crypto-swapper/ethereum/contracts/lib/TotlePrimary.sol\":{\"keccak256\":\"0x3ac5a58d34b88475ae5aa031503f97a9787c0f5d9a6d513d4d5ae9bb4bdf19f2\",\"urls\":[\"bzz-raw://0431aa34908eb57fd56fd9bb1057c9c97931721e03f2824a841b9ed19d0401ba\",\"dweb:/ipfs/QmbQRqY3CLTQanio8YmrvzqPow5v6DznZ9H5KMoJXc9Rgs\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060d78061001f6000396000f3fe608060405260043610601c5760003560e01c80635f10dffc146021575b600080fd5b60376004803603603391908101906057565b6039565b005b50565b60006101008284031215604e57600080fd5b81905092915050565b600060208284031215606857600080fd5b600082013567ffffffffffffffff811115608157600080fd5b608b84828501603c565b9150509291505056fea365627a7a72315820b73df761a5c1296e35c1783f8e7ef0e49d315522124c3136a3d87d08e1ae8bc76c6578706572696d656e74616cf564736f6c63430005100040",
+  "deployedBytecode": "0x608060405260043610601c5760003560e01c80635f10dffc146021575b600080fd5b60376004803603603391908101906057565b6039565b005b50565b60006101008284031215604e57600080fd5b81905092915050565b600060208284031215606857600080fd5b600082013567ffffffffffffffff811115608157600080fd5b608b84828501603c565b9150509291505056fea365627a7a72315820b73df761a5c1296e35c1783f8e7ef0e49d315522124c3136a3d87d08e1ae8bc76c6578706572696d656e74616cf564736f6c63430005100040",
+  "sourceMap": "59:139:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:139:4;;;;;;;",
+  "deployedSourceMap": "59:139:4:-;;;;;;;;;;;;;;;;;;;;;85:111;;;;;;;;;;;;;;;;:::i;:::-;;;;:::o;53:165:-1:-;;170:3;161:6;156:3;152:16;148:26;145:2;;;187:1;184;177:12;145:2;206:6;197:15;;138:80;;;;;225:393;;362:2;350:9;341:7;337:23;333:32;330:2;;;378:1;375;368:12;330:2;441:1;430:9;426:17;413:31;464:18;456:6;453:30;450:2;;;496:1;493;486:12;450:2;516:86;594:7;585:6;574:9;570:22;516:86;;;506:96;;392:216;324:294;;;;",
+  "source": "pragma solidity 0.5.16;\npragma experimental ABIEncoderV2;\n\ncontract TotlePrimary {\n  function performSwapCollection(\n    TotlePrimaryUtils.SwapCollection calldata swaps\n  ) external payable {\n\n  }\n}\n\nlibrary TotlePrimaryUtils {\n  struct Order {\n    address payable exchangeHandler;\n    bytes encodedPayload;\n  }\n\n  struct Trade {\n    address sourceToken;\n    address destinationToken;\n    uint256 amount;\n    bool isSourceAmount; //true if amount is sourceToken, false if it's destinationToken\n    Order[] orders;\n  }\n\n  struct Swap {\n    Trade[] trades;\n    uint256 minimumExchangeRate;\n    uint256 minimumDestinationAmount;\n    uint256 sourceAmount;\n    uint256 tradeToTakeFeeFrom;\n    bool takeFeeFromSource; //Takes the fee before the trade if true, takes it after if false\n    address payable redirectAddress;\n    bool required;\n  }\n\n  struct SwapCollection {\n    Swap[] swaps;\n    address payable partnerContract;\n    uint256 expirationBlock;\n    bytes32 id;\n    uint256 maxGasPrice;\n    uint8 v;\n    bytes32 r;\n    bytes32 s;\n  }\n}\n",
+  "sourcePath": "/home/passa/Documents/projects/Transak/transakWebAppBackend/lib/cryptoUtil/crypto-swapper/ethereum/contracts/lib/TotlePrimary.sol",
+  "ast": {
+    "absolutePath": "/home/passa/Documents/projects/Transak/transakWebAppBackend/lib/cryptoUtil/crypto-swapper/ethereum/contracts/lib/TotlePrimary.sol",
+    "exportedSymbols": {
+      "TotlePrimary": [
+        767
+      ],
+      "TotlePrimaryUtils": [
+        821
+      ]
+    },
+    "id": 822,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 759,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "id": 760,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 767,
+        "linearizedBaseContracts": [
+          767
+        ],
+        "name": "TotlePrimary",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 765,
+              "nodeType": "Block",
+              "src": "190:6:4",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 766,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "performSwapCollection",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 763,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 762,
+                  "name": "swaps",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 766,
+                  "src": "121:47:4",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_SwapCollection_$820_calldata_ptr",
+                    "typeString": "struct TotlePrimaryUtils.SwapCollection"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 761,
+                    "name": "TotlePrimaryUtils.SwapCollection",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 820,
+                    "src": "121:32:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_SwapCollection_$820_storage_ptr",
+                      "typeString": "struct TotlePrimaryUtils.SwapCollection"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "115:57:4"
+            },
+            "returnParameters": {
+              "id": 764,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "190:0:4"
+            },
+            "scope": 767,
+            "src": "85:111:4",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 822,
+        "src": "59:139:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 821,
+        "linearizedBaseContracts": [
+          821
+        ],
+        "name": "TotlePrimaryUtils",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "TotlePrimaryUtils.Order",
+            "id": 772,
+            "members": [
+              {
+                "constant": false,
+                "id": 769,
+                "name": "exchangeHandler",
+                "nodeType": "VariableDeclaration",
+                "scope": 772,
+                "src": "249:31:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 768,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "249:15:4",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 771,
+                "name": "encodedPayload",
+                "nodeType": "VariableDeclaration",
+                "scope": 772,
+                "src": "286:20:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 770,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "286:5:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Order",
+            "nodeType": "StructDefinition",
+            "scope": 821,
+            "src": "230:81:4",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "TotlePrimaryUtils.Trade",
+            "id": 784,
+            "members": [
+              {
+                "constant": false,
+                "id": 774,
+                "name": "sourceToken",
+                "nodeType": "VariableDeclaration",
+                "scope": 784,
+                "src": "334:19:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 773,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "334:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 776,
+                "name": "destinationToken",
+                "nodeType": "VariableDeclaration",
+                "scope": 784,
+                "src": "359:24:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 775,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "359:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 778,
+                "name": "amount",
+                "nodeType": "VariableDeclaration",
+                "scope": 784,
+                "src": "389:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 777,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "389:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 780,
+                "name": "isSourceAmount",
+                "nodeType": "VariableDeclaration",
+                "scope": 784,
+                "src": "409:19:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 779,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "409:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 783,
+                "name": "orders",
+                "nodeType": "VariableDeclaration",
+                "scope": 784,
+                "src": "498:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Order_$772_storage_$dyn_storage_ptr",
+                  "typeString": "struct TotlePrimaryUtils.Order[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 781,
+                    "name": "Order",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 772,
+                    "src": "498:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Order_$772_storage_ptr",
+                      "typeString": "struct TotlePrimaryUtils.Order"
+                    }
+                  },
+                  "id": 782,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "498:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Order_$772_storage_$dyn_storage_ptr",
+                    "typeString": "struct TotlePrimaryUtils.Order[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Trade",
+            "nodeType": "StructDefinition",
+            "scope": 821,
+            "src": "315:202:4",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "TotlePrimaryUtils.Swap",
+            "id": 802,
+            "members": [
+              {
+                "constant": false,
+                "id": 787,
+                "name": "trades",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "539:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Trade_$784_storage_$dyn_storage_ptr",
+                  "typeString": "struct TotlePrimaryUtils.Trade[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 785,
+                    "name": "Trade",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 784,
+                    "src": "539:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Trade_$784_storage_ptr",
+                      "typeString": "struct TotlePrimaryUtils.Trade"
+                    }
+                  },
+                  "id": 786,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "539:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Trade_$784_storage_$dyn_storage_ptr",
+                    "typeString": "struct TotlePrimaryUtils.Trade[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 789,
+                "name": "minimumExchangeRate",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "559:27:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 788,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "559:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 791,
+                "name": "minimumDestinationAmount",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "592:32:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 790,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "592:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 793,
+                "name": "sourceAmount",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "630:20:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 792,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "630:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 795,
+                "name": "tradeToTakeFeeFrom",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "656:26:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 794,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "656:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 797,
+                "name": "takeFeeFromSource",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "688:22:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 796,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "688:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 799,
+                "name": "redirectAddress",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "782:31:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 798,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "782:15:4",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 801,
+                "name": "required",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "819:13:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 800,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "819:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Swap",
+            "nodeType": "StructDefinition",
+            "scope": 821,
+            "src": "521:316:4",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "TotlePrimaryUtils.SwapCollection",
+            "id": 820,
+            "members": [
+              {
+                "constant": false,
+                "id": 805,
+                "name": "swaps",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "869:12:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Swap_$802_storage_$dyn_storage_ptr",
+                  "typeString": "struct TotlePrimaryUtils.Swap[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 803,
+                    "name": "Swap",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 802,
+                    "src": "869:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Swap_$802_storage_ptr",
+                      "typeString": "struct TotlePrimaryUtils.Swap"
+                    }
+                  },
+                  "id": 804,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "869:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Swap_$802_storage_$dyn_storage_ptr",
+                    "typeString": "struct TotlePrimaryUtils.Swap[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 807,
+                "name": "partnerContract",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "887:31:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 806,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "887:15:4",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 809,
+                "name": "expirationBlock",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "924:23:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 808,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "924:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 811,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "953:10:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 810,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "953:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 813,
+                "name": "maxGasPrice",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "969:19:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 812,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "969:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 815,
+                "name": "v",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "994:7:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 814,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "994:5:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 817,
+                "name": "r",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "1007:9:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 816,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1007:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 819,
+                "name": "s",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "1022:9:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 818,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1022:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "SwapCollection",
+            "nodeType": "StructDefinition",
+            "scope": 821,
+            "src": "841:195:4",
+            "visibility": "public"
+          }
+        ],
+        "scope": 822,
+        "src": "200:838:4"
+      }
+    ],
+    "src": "0:1039:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/passa/Documents/projects/Transak/transakWebAppBackend/lib/cryptoUtil/crypto-swapper/ethereum/contracts/lib/TotlePrimary.sol",
+    "exportedSymbols": {
+      "TotlePrimary": [
+        767
+      ],
+      "TotlePrimaryUtils": [
+        821
+      ]
+    },
+    "id": 822,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 759,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "id": 760,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 767,
+        "linearizedBaseContracts": [
+          767
+        ],
+        "name": "TotlePrimary",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 765,
+              "nodeType": "Block",
+              "src": "190:6:4",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 766,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "performSwapCollection",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 763,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 762,
+                  "name": "swaps",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 766,
+                  "src": "121:47:4",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_SwapCollection_$820_calldata_ptr",
+                    "typeString": "struct TotlePrimaryUtils.SwapCollection"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 761,
+                    "name": "TotlePrimaryUtils.SwapCollection",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 820,
+                    "src": "121:32:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_SwapCollection_$820_storage_ptr",
+                      "typeString": "struct TotlePrimaryUtils.SwapCollection"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "115:57:4"
+            },
+            "returnParameters": {
+              "id": 764,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "190:0:4"
+            },
+            "scope": 767,
+            "src": "85:111:4",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 822,
+        "src": "59:139:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 821,
+        "linearizedBaseContracts": [
+          821
+        ],
+        "name": "TotlePrimaryUtils",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "TotlePrimaryUtils.Order",
+            "id": 772,
+            "members": [
+              {
+                "constant": false,
+                "id": 769,
+                "name": "exchangeHandler",
+                "nodeType": "VariableDeclaration",
+                "scope": 772,
+                "src": "249:31:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 768,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "249:15:4",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 771,
+                "name": "encodedPayload",
+                "nodeType": "VariableDeclaration",
+                "scope": 772,
+                "src": "286:20:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 770,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "286:5:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Order",
+            "nodeType": "StructDefinition",
+            "scope": 821,
+            "src": "230:81:4",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "TotlePrimaryUtils.Trade",
+            "id": 784,
+            "members": [
+              {
+                "constant": false,
+                "id": 774,
+                "name": "sourceToken",
+                "nodeType": "VariableDeclaration",
+                "scope": 784,
+                "src": "334:19:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 773,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "334:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 776,
+                "name": "destinationToken",
+                "nodeType": "VariableDeclaration",
+                "scope": 784,
+                "src": "359:24:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 775,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "359:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 778,
+                "name": "amount",
+                "nodeType": "VariableDeclaration",
+                "scope": 784,
+                "src": "389:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 777,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "389:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 780,
+                "name": "isSourceAmount",
+                "nodeType": "VariableDeclaration",
+                "scope": 784,
+                "src": "409:19:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 779,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "409:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 783,
+                "name": "orders",
+                "nodeType": "VariableDeclaration",
+                "scope": 784,
+                "src": "498:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Order_$772_storage_$dyn_storage_ptr",
+                  "typeString": "struct TotlePrimaryUtils.Order[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 781,
+                    "name": "Order",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 772,
+                    "src": "498:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Order_$772_storage_ptr",
+                      "typeString": "struct TotlePrimaryUtils.Order"
+                    }
+                  },
+                  "id": 782,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "498:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Order_$772_storage_$dyn_storage_ptr",
+                    "typeString": "struct TotlePrimaryUtils.Order[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Trade",
+            "nodeType": "StructDefinition",
+            "scope": 821,
+            "src": "315:202:4",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "TotlePrimaryUtils.Swap",
+            "id": 802,
+            "members": [
+              {
+                "constant": false,
+                "id": 787,
+                "name": "trades",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "539:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Trade_$784_storage_$dyn_storage_ptr",
+                  "typeString": "struct TotlePrimaryUtils.Trade[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 785,
+                    "name": "Trade",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 784,
+                    "src": "539:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Trade_$784_storage_ptr",
+                      "typeString": "struct TotlePrimaryUtils.Trade"
+                    }
+                  },
+                  "id": 786,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "539:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Trade_$784_storage_$dyn_storage_ptr",
+                    "typeString": "struct TotlePrimaryUtils.Trade[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 789,
+                "name": "minimumExchangeRate",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "559:27:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 788,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "559:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 791,
+                "name": "minimumDestinationAmount",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "592:32:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 790,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "592:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 793,
+                "name": "sourceAmount",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "630:20:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 792,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "630:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 795,
+                "name": "tradeToTakeFeeFrom",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "656:26:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 794,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "656:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 797,
+                "name": "takeFeeFromSource",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "688:22:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 796,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "688:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 799,
+                "name": "redirectAddress",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "782:31:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 798,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "782:15:4",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 801,
+                "name": "required",
+                "nodeType": "VariableDeclaration",
+                "scope": 802,
+                "src": "819:13:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 800,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "819:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Swap",
+            "nodeType": "StructDefinition",
+            "scope": 821,
+            "src": "521:316:4",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "TotlePrimaryUtils.SwapCollection",
+            "id": 820,
+            "members": [
+              {
+                "constant": false,
+                "id": 805,
+                "name": "swaps",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "869:12:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Swap_$802_storage_$dyn_storage_ptr",
+                  "typeString": "struct TotlePrimaryUtils.Swap[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 803,
+                    "name": "Swap",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 802,
+                    "src": "869:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Swap_$802_storage_ptr",
+                      "typeString": "struct TotlePrimaryUtils.Swap"
+                    }
+                  },
+                  "id": 804,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "869:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Swap_$802_storage_$dyn_storage_ptr",
+                    "typeString": "struct TotlePrimaryUtils.Swap[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 807,
+                "name": "partnerContract",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "887:31:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 806,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "887:15:4",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 809,
+                "name": "expirationBlock",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "924:23:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 808,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "924:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 811,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "953:10:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 810,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "953:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 813,
+                "name": "maxGasPrice",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "969:19:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 812,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "969:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 815,
+                "name": "v",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "994:7:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 814,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "994:5:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 817,
+                "name": "r",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "1007:9:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 816,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1007:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 819,
+                "name": "s",
+                "nodeType": "VariableDeclaration",
+                "scope": 820,
+                "src": "1022:9:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 818,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1022:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "SwapCollection",
+            "nodeType": "StructDefinition",
+            "scope": 821,
+            "src": "841:195:4",
+            "visibility": "public"
+          }
+        ],
+        "scope": 822,
+        "src": "200:838:4"
+      }
+    ],
+    "src": "0:1039:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-05-01T15:25:51.339Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
